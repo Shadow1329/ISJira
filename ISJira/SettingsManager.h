@@ -17,11 +17,13 @@
 -(NSDate*)getDateTo;
 -(NSArray*)getProjects;
 -(NSArray*)getUsers;
+-(NSDate*)getLastShowingDate;
 
 -(void)setRange:(int)value;
 -(void)setDateFrom:(NSDate*)value;
 -(void)setDateTo:(NSDate*)value;
 -(void)setProjects:(NSArray*)value;
--(void)setUsers:(NSArray*)value;;
+-(void)setUsers:(NSArray*)value;
+-(void)setLastShowingDate:(NSDate*)value;
 
 @end

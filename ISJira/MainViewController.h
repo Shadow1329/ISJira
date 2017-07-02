@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LoginManager.h"
+#import <Google/Analytics.h>
 #import "DataManager.h"
 #import "SettingsManager.h"
+#import "JiraManager.h"
+#import "GPSService.h"
 
 
 @interface WorklogTableViewCell: UITableViewCell
@@ -26,6 +28,8 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *mWorklogTables;
 @property (strong, nonatomic) IBOutlet UIButton *mSettingsButton;
+
+@property (strong, nonatomic) id<GAITracker> mGATracker;
 
 -(IBAction)settingsButtonClick:(id)sender;
 

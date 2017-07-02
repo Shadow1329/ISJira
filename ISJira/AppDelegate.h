@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Google/Analytics.h>
 #import "ViewController.h"
+#import "GPSService.h"
+#import "SettingsManager.h"
+#import "LoginManager.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, GPSServiceDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

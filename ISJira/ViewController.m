@@ -59,6 +59,14 @@
     {
         [[LoginManager sharedInstance] setLogin: login];
         [[LoginManager sharedInstance] setPassword: password];
+        
+        // Send successful login
+        [_mGATracker send:[[GAIDictionaryBuilder createEventWithCategory:@"ISJira"
+                                                              action:@"Login"
+                                                               label:@"Success"
+                                                               value:@1] build]];
+
+        
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
             UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             UIViewController *viewController = [mainStoryBoard instantiateViewControllerWithIdentifier:@"MainViewController"];
@@ -86,6 +94,13 @@
                                  otherButtonTitles:nil, nil];
         [alert show];
     }
+    
+    // Send unsuccessful login
+    [_mGATracker send:[[GAIDictionaryBuilder createEventWithCategory:@"ISJira"
+                                                              action:@"Login"
+                                                               label:@"Failed"
+                                                               value:@1] build]];
+    
     
     // If checking not passed - enable views
     _mLoginButton.enabled = true;
@@ -124,7 +139,23 @@
     _mTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
     _mTapRecognizer.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:_mTapRecognizer];
+}
+
+
+
+
+-(void)viewWillAppear:(BOOL)animated {
+    _mGATracker = [[GAI sharedInstance] defaultTracker];
+    [_mGATracker set:kGAIScreenName value:@"Login Screen"];
+    [_mGATracker send:[[GAIDictionaryBuilder createScreenView] build]];
     
+    // Send successful launch
+    [_mGATracker send:[[GAIDictionaryBuilder createEventWithCategory:@"ISJira"
+                                                              action:@"Launch"
+                                                               label:@"Success"
+                                                               value:@1] build]];
+    
+    // Login
     NSLog(@"Login - %@", [[LoginManager sharedInstance] getLogin]);
     NSLog(@"Passw - %@", [[LoginManager sharedInstance] getPassword]);
     

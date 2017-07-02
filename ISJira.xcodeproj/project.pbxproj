@@ -7,26 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F4243662BF191D84387C480 /* libPods-ISJira.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B31A40D1A2F407706F712D /* libPods-ISJira.a */; };
+		84030E881F095504004E9BCB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84030E871F095503004E9BCB /* GoogleService-Info.plist */; };
 		845E03381EBA3F9C00CB9D09 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 845E03371EBA3F9C00CB9D09 /* gear.png */; };
 		845E072A1EBB9D6A0024EBB7 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E07291EBB9D6A0024EBB7 /* DataManager.m */; };
 		846603241EB5A6E0009B2475 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846603231EB5A6E0009B2475 /* MainViewController.m */; };
+		847832DF1F05645B00E75ED2 /* GPSService.m in Sources */ = {isa = PBXBuildFile; fileRef = 847832DE1F05645B00E75ED2 /* GPSService.m */; };
 		84AA065A1E632F2700A47B63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA06591E632F2700A47B63 /* main.m */; };
 		84AA065D1E632F2700A47B63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA065C1E632F2700A47B63 /* AppDelegate.m */; };
 		84AA06601E632F2700A47B63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA065F1E632F2700A47B63 /* ViewController.m */; };
 		84AA06631E632F2700A47B63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AA06611E632F2700A47B63 /* Main.storyboard */; };
 		84AA06651E632F2700A47B63 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84AA06641E632F2700A47B63 /* Images.xcassets */; };
 		84AA06681E632F2700A47B63 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AA06661E632F2700A47B63 /* LaunchScreen.xib */; };
+		84BE40A21F07EE5A00547010 /* JiraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE40A11F07EE5A00547010 /* JiraManager.m */; };
 		84EEE7BE1EB6019700F224A5 /* LoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEE7BD1EB6019700F224A5 /* LoginManager.m */; };
 		84EEE7C11EB601C900F224A5 /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEE7C01EB601C900F224A5 /* SettingsManager.m */; };
 		84EEE7C41EB60A9800F224A5 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEE7C31EB60A9800F224A5 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		453A5609632F57C2296FFB54 /* Pods-ISJira.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISJira.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISJira/Pods-ISJira.release.xcconfig"; sourceTree = "<group>"; };
+		84030E871F095503004E9BCB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		845E03371EBA3F9C00CB9D09 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
 		845E07281EBB9D6A0024EBB7 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		845E07291EBB9D6A0024EBB7 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		846603221EB5A6E0009B2475 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		846603231EB5A6E0009B2475 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		847832DD1F05645B00E75ED2 /* GPSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSService.h; sourceTree = "<group>"; };
+		847832DE1F05645B00E75ED2 /* GPSService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSService.m; sourceTree = "<group>"; };
 		84AA06541E632F2700A47B63 /* ISJira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISJira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AA06581E632F2700A47B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84AA06591E632F2700A47B63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -37,12 +45,16 @@
 		84AA06621E632F2700A47B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84AA06641E632F2700A47B63 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84AA06671E632F2700A47B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		84BE40A01F07EE5A00547010 /* JiraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiraManager.h; sourceTree = "<group>"; };
+		84BE40A11F07EE5A00547010 /* JiraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiraManager.m; sourceTree = "<group>"; };
 		84EEE7BC1EB6019700F224A5 /* LoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginManager.h; sourceTree = "<group>"; };
 		84EEE7BD1EB6019700F224A5 /* LoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginManager.m; sourceTree = "<group>"; };
 		84EEE7BF1EB601C900F224A5 /* SettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsManager.h; sourceTree = "<group>"; };
 		84EEE7C01EB601C900F224A5 /* SettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsManager.m; sourceTree = "<group>"; };
 		84EEE7C21EB60A9800F224A5 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		84EEE7C31EB60A9800F224A5 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		A2029F755FF67349737A150C /* Pods-ISJira.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISJira.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISJira/Pods-ISJira.debug.xcconfig"; sourceTree = "<group>"; };
+		E5B31A40D1A2F407706F712D /* libPods-ISJira.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ISJira.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,17 +62,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4243662BF191D84387C480 /* libPods-ISJira.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DA9C9D63545EBAB12B3E50A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2029F755FF67349737A150C /* Pods-ISJira.debug.xcconfig */,
+				453A5609632F57C2296FFB54 /* Pods-ISJira.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		84AA064B1E632F2700A47B63 = {
 			isa = PBXGroup;
 			children = (
+				84030E871F095503004E9BCB /* GoogleService-Info.plist */,
 				84AA06561E632F2700A47B63 /* ISJira */,
 				84AA06551E632F2700A47B63 /* Products */,
+				4DA9C9D63545EBAB12B3E50A /* Pods */,
+				D183F952177D9FA2704FBA61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +115,10 @@
 				84EEE7C01EB601C900F224A5 /* SettingsManager.m */,
 				845E07281EBB9D6A0024EBB7 /* DataManager.h */,
 				845E07291EBB9D6A0024EBB7 /* DataManager.m */,
+				847832DD1F05645B00E75ED2 /* GPSService.h */,
+				847832DE1F05645B00E75ED2 /* GPSService.m */,
+				84BE40A01F07EE5A00547010 /* JiraManager.h */,
+				84BE40A11F07EE5A00547010 /* JiraManager.m */,
 				84AA06611E632F2700A47B63 /* Main.storyboard */,
 				84AA06641E632F2700A47B63 /* Images.xcassets */,
 				84AA06661E632F2700A47B63 /* LaunchScreen.xib */,
@@ -107,6 +136,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D183F952177D9FA2704FBA61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5B31A40D1A2F407706F712D /* libPods-ISJira.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84AA06771E632F2700A47B63 /* Build configuration list for PBXNativeTarget "ISJira" */;
 			buildPhases = (
+				C748E8789CE10F01C5CEECBA /* [CP] Check Pods Manifest.lock */,
 				84AA06501E632F2700A47B63 /* Sources */,
 				84AA06511E632F2700A47B63 /* Frameworks */,
 				84AA06521E632F2700A47B63 /* Resources */,
+				51AB68C68BF9127BE5E74F2D /* [CP] Embed Pods Frameworks */,
+				39958EA0A3522532917976F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +178,11 @@
 				TargetAttributes = {
 					84AA06531E632F2700A47B63 = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -166,6 +211,7 @@
 			files = (
 				84AA06631E632F2700A47B63 /* Main.storyboard in Resources */,
 				84AA06681E632F2700A47B63 /* LaunchScreen.xib in Resources */,
+				84030E881F095504004E9BCB /* GoogleService-Info.plist in Resources */,
 				845E03381EBA3F9C00CB9D09 /* gear.png in Resources */,
 				84AA06651E632F2700A47B63 /* Images.xcassets in Resources */,
 			);
@@ -173,11 +219,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		39958EA0A3522532917976F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISJira/Pods-ISJira-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51AB68C68BF9127BE5E74F2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISJira/Pods-ISJira-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C748E8789CE10F01C5CEECBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84AA06501E632F2700A47B63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847832DF1F05645B00E75ED2 /* GPSService.m in Sources */,
 				84AA06601E632F2700A47B63 /* ViewController.m in Sources */,
 				84EEE7BE1EB6019700F224A5 /* LoginManager.m in Sources */,
 				84AA065D1E632F2700A47B63 /* AppDelegate.m in Sources */,
@@ -186,6 +281,7 @@
 				845E072A1EBB9D6A0024EBB7 /* DataManager.m in Sources */,
 				846603241EB5A6E0009B2475 /* MainViewController.m in Sources */,
 				84EEE7C41EB60A9800F224A5 /* SettingsViewController.m in Sources */,
+				84BE40A21F07EE5A00547010 /* JiraManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +391,7 @@
 		};
 		84AA06781E632F2700A47B63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2029F755FF67349737A150C /* Pods-ISJira.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ISJira/Info.plist;
@@ -305,6 +402,7 @@
 		};
 		84AA06791E632F2700A47B63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 453A5609632F57C2296FFB54 /* Pods-ISJira.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ISJira/Info.plist;

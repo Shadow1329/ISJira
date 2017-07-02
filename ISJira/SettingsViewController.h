@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Google/Analytics.h>
 #import "LoginManager.h"
 #import "DataManager.h"
 #import "SettingsManager.h"
@@ -28,6 +29,7 @@
 @property (strong, nonatomic) IBOutlet UITableView *mProjectsTable;
 @property (strong, nonatomic) IBOutlet UITableView *mUsersTable;
 @property (strong, nonatomic) IBOutlet UIButton *mTableClose;
+@property (strong, nonatomic) id<GAITracker> mGATracker;
 
 
 -(IBAction)backButtonClick:(id)sender;

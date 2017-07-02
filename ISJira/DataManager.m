@@ -34,6 +34,12 @@
 {
     return mUsers;
 }
+    
+
+-(NSArray*)getWorklogs
+{
+    return mWorklogs;
+}
 
 
 
@@ -47,6 +53,12 @@
 -(void)setUsers:(NSArray*)value
 {
     mUsers = value;
+}
+    
+    
+-(void)setWorklogs:(NSArray*)value
+{
+    mWorklogs = value;
 }
 
 @end

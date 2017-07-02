@@ -65,6 +65,12 @@
     return result;
 }
 
+-(NSDate*)getLastShowingDate
+{
+    NSDate *result = [[NSUserDefaults standardUserDefaults] objectForKey:@"last_showing_date"];
+    return result;
+}
+
 
 
 
@@ -99,6 +105,13 @@
 -(void)setUsers:(NSArray *)value
 {
     [[NSUserDefaults standardUserDefaults] setObject:value forKey:@"users"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+
+-(void)setLastShowingDate:(NSDate*)value
+{
+    [[NSUserDefaults standardUserDefaults] setObject:value forKey:@"last_showing_date"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 

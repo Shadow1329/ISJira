@@ -181,6 +181,25 @@ bool dateToSelect = false;
 // Close table handler
 -(IBAction)closeTable:(id)sender
 {
+    if (!_mProjectsTable.hidden)
+    {
+        // Send successful getting worklog
+        [_mGATracker send:[[GAIDictionaryBuilder createEventWithCategory:@"ISJira"
+                                                                  action:@"Selected projects"
+                                                                   label:@"Success"
+                                                                   value:@1] build]];
+    }
+    
+    if (!_mUsersTable.hidden)
+    {
+        // Send successful getting worklog
+        [_mGATracker send:[[GAIDictionaryBuilder createEventWithCategory:@"ISJira"
+                                                                  action:@"Selected users"
+                                                                   label:@"Success"
+                                                                   value:@1] build]];
+    }
+    
+    
     _mTableClose.hidden = true;
     _mProjectsTable.hidden = true;
     _mUsersTable.hidden = true;
@@ -211,6 +230,15 @@ bool dateToSelect = false;
         _mDateViewTo.hidden = false;
         _mDateSelectTo.hidden = false;
     }
+}
+
+
+
+
+-(void)viewWillAppear:(BOOL)animated {
+    _mGATracker = [[GAI sharedInstance] defaultTracker];
+    [_mGATracker set:kGAIScreenName value:@"Settings Screen"];
+    [_mGATracker send:[[GAIDictionaryBuilder createScreenView] build]];
 }
 
 

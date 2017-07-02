@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Google/Analytics.h>
 #import "LoginManager.h"
 #import "MainViewController.h"
 
@@ -17,6 +18,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *mLoginButton;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *mActivityIndicator;
 @property (nonatomic) UITapGestureRecognizer *mTapRecognizer;
+
+@property (strong, nonatomic) id<GAITracker> mGATracker;
 
 -(IBAction)loginButtonClick:(id)sender;
 
